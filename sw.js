@@ -3,7 +3,7 @@ const CACHE = 'pwa-diary-cache-v1'
 
 self.addEventListener('install', (event) => {
   event.waitUntil(
-    caches.open(CACHE).then((c) => c.addAll(['/', '/index.html', '/manifest.webmanifest']))
+    caches.open(CACHE).then((c) => c.addAll(['./', './index.html', './manifest.webmanifest']))
   )
 })
 
